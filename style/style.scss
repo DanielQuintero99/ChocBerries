@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&display=swap');
+// ------PALETA DE COLORES-----
+    $backgroundColor:#161616;
+    $ligthColor:#FFFFFF;
+    $navColor:#ff7474;
+    
+// ------FIN PALETA DE COLORES-----
+
+// -----FUENTES------
+    $font1: 'EB Garamond', serif;
+    $font2: 'EB Garamond', italic;
+
+// -----FIN FUENTES-----
+body{
+    background-color:$backgroundColor;
+}
