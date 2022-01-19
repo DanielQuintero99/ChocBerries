@@ -7,6 +7,70 @@
 
 body {
   background-color: #161616;
+  margin-top: 7vh;
+  background-image: url(../images/dotBackground.svg);
+}
+
+.offcanvas-header,
+.offcanvas-body {
+  background-image: url(../images/dotBackground.svg);
+  background-color: #9b4040;
+}
+
+.lineFondo, .star, .elipse {
+  position: absolute;
+  z-index: -10;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/lineBackground.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.elipse {
+  background-image: radial-gradient(at 200px 200px, #B1402A 10%, #161616 100%);
+  z-index: -11;
+  width: 128px;
+  height: 155px;
+  filter: blur(28px);
+  background-size: cover;
+  border-radius: 50%;
+  left: 55%;
+  top: 10%;
+}
+
+.star {
+  background-image: url(../images/star.svg);
+  height: 114px;
+  width: 89px;
+  left: 65%;
+  top: 10%;
+}
+
+.grid {
+  display: grid;
+  padding: 0;
+  height: 100vh;
+}
+
+.mainTittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "EB Garamond", serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.04em;
+  padding-left: 10px;
+  text-shadow: #9b4040 8px 7px 20px;
+}
+
+h1 {
+  font-size: 44px;
 }
 
 /*# sourceMappingURL=style.css.map */
