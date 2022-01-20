@@ -16,6 +16,11 @@ body {
   height: 50vh;
 }
 
+.offcanvas-backdrop {
+  width: 113vw;
+  height: 114vh;
+}
+
 .navbar-brand {
   font-family: "Freehand", cursive;
   font-size: 28px;
@@ -77,8 +82,8 @@ body {
   background-image: url(../images/star.svg);
   height: 80px;
   width: 89px;
-  left: 70%;
-  top: 8%;
+  left: 74%;
+  top: 12%;
 }
 
 .grid {
@@ -106,6 +111,7 @@ body {
 
 h1 {
   font-size: 44px;
+  padding-top: 54px;
 }
 
 .mainSubtittle {
@@ -141,7 +147,7 @@ h1 {
 }
 
 .homePicture {
-  width: 100%;
+  width: 95%;
   height: auto;
   background: url(../images/strawberry.jpg);
   background-repeat: no-repeat;
@@ -150,6 +156,122 @@ h1 {
   box-sizing: border-box;
   border-radius: 294.5px 0px 0px 0px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .homePicture {
+    width: 80%;
+  }
+
+  .buton {
+    margin-left: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .homePicture {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  h1,
+.mainTittle {
+    grid-column: 2/3;
+    font-size: 72px;
+    grid-row: 2/3;
+    padding-left: 20px;
+  }
+
+  .mainSubtittle {
+    grid-template-columns: 2/3;
+    grid-row: 3/4;
+    font-size: 22px;
+    padding-top: 25px;
+    padding-left: 32px;
+  }
+
+  .buton {
+    grid-row: 4/5;
+    width: 217px;
+    font-size: 20px;
+  }
+
+  .lineFondo, .elipseNavBar, .elipse, .star {
+    background-image: url(../images/lineBackgroundDesktop.svg);
+    background-position-x: 70px;
+  }
+
+  .elipse {
+    background-image: radial-gradient(at 200px 200px, #B1402A 10%, #161616 100%);
+    width: 168px;
+    height: 175px;
+    filter: blur(28px);
+    left: 70%;
+    top: 35%;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .star {
+    background-image: url(../images/star.svg);
+    height: 120px;
+    width: 120px;
+    left: 80%;
+    top: 40%;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .offcanvas-body {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1200px) {
+  .elipse {
+    left: 70%;
+    top: 35%;
+  }
+
+  .star {
+    height: 120px;
+    width: 120px;
+    left: 75%;
+    top: 35%;
+  }
+}
+@media (min-width: 1400px) {
+  .elipse {
+    left: 75%;
+    top: 25%;
+  }
+
+  .star {
+    height: 160px;
+    width: 160px;
+    left: 75%;
+    top: 30%;
+  }
+
+  h1 {
+    font-size: 110px;
+  }
+
+  .mainSubtittle {
+    font-size: 34px;
+  }
+
+  .buton {
+    width: 300px;
+    display: flex;
+    font-size: 34px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
