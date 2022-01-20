@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&display=swap");
 * {
   margin: 0;
@@ -11,13 +12,28 @@ body {
   background-image: url(../images/dotBackground.svg);
 }
 
+.navbar-brand {
+  font-family: "Freehand", cursive;
+}
+
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+.bg-transparent {
+  --bs-bg-opacity: 1;
+  background-color: #161616 !important;
+  background-image: url(../images/dotBackground.svg);
+}
+
 .offcanvas-header,
 .offcanvas-body {
   background-image: url(../images/dotBackground.svg);
   background-color: #9b4040;
 }
 
-.lineFondo, .star, .elipse {
+.lineFondo, .star, .elipse, .elipseNavBar {
   position: absolute;
   z-index: -10;
   display: flex;
@@ -26,6 +42,16 @@ body {
   background-image: url(../images/lineBackground.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.elipseNavBar {
+  background-image: radial-gradient(at 200px 200px, #B1402A 10%, #161616 100%);
+  z-index: -11;
+  width: 236px;
+  height: 30px;
+  left: 1%;
+  filter: blur(28px);
+  position: absolute;
 }
 
 .elipse {
@@ -103,6 +129,8 @@ h1 {
   margin-bottom: 75px;
   border: none;
   margin-left: 70px;
+  color: #161616;
+  font-family: "EB Garamond", serif;
 }
 
 .homePicture {
