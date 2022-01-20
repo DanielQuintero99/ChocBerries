@@ -26,8 +26,14 @@ body {
     margin-top: 7vh;
     background-image: url(../images/dotBackground.svg);
 }
+.offcanvas-top {
+    height: 50vh;
+}
 .navbar-brand{
     font-family: $fontTittle;
+    font-size: 28px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .navbar-dark .navbar-toggler {
     color: transparent;
