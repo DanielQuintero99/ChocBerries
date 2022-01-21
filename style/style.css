@@ -23,7 +23,7 @@ body {
 
 .navbar-brand {
   font-family: "Freehand", cursive;
-  font-size: 28px;
+  font-size: 32px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -158,6 +158,10 @@ h1 {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+.buton:hover {
+  background-color: #9b4040;
+}
+
 @media (min-width: 768px) {
   .homePicture {
     width: 80%;
@@ -187,6 +191,10 @@ h1 {
     font-size: 72px;
     grid-row: 2/3;
     padding-left: 20px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    padding-left: 18rem;
   }
 
   .mainSubtittle {
@@ -223,8 +231,8 @@ h1 {
     background-image: url(../images/star.svg);
     height: 120px;
     width: 120px;
-    left: 80%;
-    top: 40%;
+    left: 75%;
+    top: 30%;
     background-position-x: center;
     background-position-y: center;
   }
@@ -239,6 +247,10 @@ h1 {
     top: 35%;
   }
 
+  .nav-item {
+    font-size: 16px;
+  }
+
   .star {
     height: 120px;
     width: 120px;
@@ -247,9 +259,19 @@ h1 {
   }
 }
 @media (min-width: 1400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
   .elipse {
     left: 75%;
     top: 25%;
+  }
+
+  .nav-item {
+    font-size: 18px;
   }
 
   .star {
