@@ -21,6 +21,10 @@ body {
   height: 114vh;
 }
 
+p {
+  font-family: "EB Garamond", italic;
+}
+
 .navbar-brand {
   font-family: "Freehand", cursive;
   font-size: 32px;
@@ -330,6 +334,24 @@ h1 {
   .offcanvas-body {
     background-color: transparent;
   }
+
+  .contenedorAbout {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .logoSimple {
+    width: 400px;
+  }
+
+  .contenedorAbout figure .capa h3 {
+    font-size: 60px;
+  }
+
+  .capaTexto {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1200px) {
   .elipse {
@@ -346,6 +368,27 @@ h1 {
     width: 120px;
     left: 75%;
     top: 35%;
+  }
+
+  .contenedorAbout {
+    padding-left: 73px;
+    padding-right: 83px !important;
+  }
+
+  .logoSimple {
+    margin-right: 100px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    height: 451px;
+    width: 848px;
+  }
+
+  .contenedorAbout figure .capa h3 {
+    font-size: 70px;
+  }
+
+  .capaTexto {
+    font-size: 22px;
   }
 }
 @media (min-width: 1400px) {
@@ -383,6 +426,19 @@ h1 {
     width: 300px;
     display: flex;
     font-size: 34px;
+  }
+
+  .logoSimple {
+    height: 573px;
+    width: 991px;
+  }
+
+  .contenedorAbout figure .capa h3 {
+    font-size: 70px;
+  }
+
+  .capaTexto {
+    font-size: 22px;
   }
 }
 
