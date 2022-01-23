@@ -369,8 +369,8 @@ h1 {
 
 .borderProductos {
   border-radius: 25px;
-  outline: 2px outset #9b4040;
-  outline-offset: 2px;
+  border: 2px outset #9b4040;
+  padding: 2px;
 }
 
 @media (min-width: 768px) {
