@@ -11,6 +11,7 @@
 // ------PALETA DE COLORES-----
 $backgroundColor:#161616;
 $backgroundColorAbout:#311818;
+$backgroundColorProductos:#470202;
 $ligthColor:#FFFFFF;
 $navColor:#9b4040;
 
@@ -264,10 +265,104 @@ h1 {
     margin-top: 30px;
     font-family: $fontTittle;
     font-size: 50px;
+    text-shadow: 2px 2px 2px $backgroundColor;
 
 }
 
-.contenedor figure .capa p {
+.contenedorAbout figure .capa p {
+    color: $backgroundColorAbout;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    font-family: $font2;
+    
+}
+
+.contenedorAbout figure:hover>img {
+    transform: scale(1.3);
+}
+
+.productos{
+    background-image: url(../images/dotBackground.svg);
+    border-radius: 4rem 4rem 4rem 4rem;
+    margin-top: 20px;
+    background-color: $backgroundColorProductos;
+    margin-top: 20px;
+}
+
+.tittleProductos{
+    font-family: $fontTittle;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:$ligthColor;
+}
+
+.contenedorProductos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+    flex-direction: column;
+}
+
+.contenedorProductos figure {
+    position: relative;
+    height: 60%;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 4rem;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.contenedorProductos figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedorProductos figure .capaProductos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.897);
+    background-image: url(../images/dotBackground.svg);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4rem 4rem 4rem 4rem;
+}
+
+.contenedorProductos figure:hover>.capaProductos{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorProductos figure:hover>.capaProductos h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedorProductos figure .capaProductos h3 {
+    color: $navColor;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    font-family: $fontTittle;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px $backgroundColor;
+
+}
+
+.contenedor figure .capaProductos p {
     color: $ligthColor;
     font-size: 15px;
     line-height: 1.5;
@@ -277,10 +372,15 @@ h1 {
 
 }
 
-.contenedorAbout figure:hover>img {
+.contenedorProductos figure:hover>img {
     transform: scale(1.3);
 }
 
+
+.cubiertasChocolate{
+    width: 50px;
+    height: 50px;
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .homePicture {
@@ -414,7 +514,7 @@ h1 {
         height: 451px;
         width: 848px;
     }
-    .contenedorAbout figure .capa h3 {
+    .contenedorProductos figure .capa h3 {
         font-size: 70px;
     }
     .capaTexto{
